@@ -4,14 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src https://images.unsplash.com; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.google.com">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#F8DCCB">
 <title>Rocky Coast Gift | Gift shop in Saint John, NB</title>
 <meta name="description" content="Rocky Coast Gift is a gift shop on Prince William Street in Saint John. It sells giftware, souvenirs, jewelry and candy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=DM+Sans:wght@400;500;700&amp;display=swap">
-<style>:root{--bg:#FBF6EE;--surface:#FFFFFF;--ink:#2B2420;--muted:#6A5B50;--hero-bg:#F8DCCB;--hero-ink:#2B2420;--accent:#A3412A;--on-accent:#FFFFFF;--focus:#2B2420;--r:999px;--rs:18px;--h1:clamp(2.6rem,9vw,5.25rem);--k:1;--ph:#e3d8c8;--ov:0,0,0;--shape:28px;--hw:600;--head:"Fraunces",Georgia,"Times New Roman",serif;--body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=800&amp;q=70" imagesrcset="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w" imagesizes="(min-width:860px) 50vw, calc(100vw - 40px)" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=DM+Sans:wght@400;700&amp;display=swap">
+<style>:root{--bg:#FBF6EE;--surface:#FFFFFF;--ink:#2B2420;--muted:#6A5B50;--hero-bg:#F8DCCB;--hero-ink:#2B2420;--accent:#A3412A;--on-accent:#FFFFFF;--focus:#2B2420;--r:999px;--rs:18px;--h1:clamp(2.6rem,9vw,5.25rem);--k:1;--ph:#e3d8c8;--ov:0,0,0;--shape:28px;--zoom:1.1;--lift:30px;--rng:55%;--zr:90vh;--dur:.8s;--rise:18px;--hw:600;--head:"Fraunces",Georgia,"Times New Roman",serif;--body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);overflow-x:hidden}
@@ -27,6 +30,9 @@ img{max-width:100%}
 .hero-photo img{display:block;width:100%;object-fit:cover}
 .eyebrow{margin:0 0 .9rem;font:700 .8125rem/1.4 var(--body);letter-spacing:.14em;text-transform:uppercase}
 h1{margin:0;font:var(--hw) calc(var(--h1) * var(--k))/1.02 var(--head);letter-spacing:-.02em;text-wrap:balance;overflow-wrap:anywhere;max-width:15ch}
+.tagline{margin:1rem 0 0;max-width:26em;font:400 clamp(1.2rem,2.8vw,1.6rem)/1.35 var(--body);border-left:4px solid var(--accent);padding-left:14px}
+.tagline.head{font:var(--hw) clamp(1.15rem,2.6vw,1.5rem)/1.25 var(--head)}
+.tagline+.where{margin-top:.8rem}
 .where{margin:1.1rem 0 0;font-size:1.0625rem;opacity:.95;max-width:30em}
 .actions{display:none;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,3.5vw,36px)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:var(--r);font:700 1rem/1 var(--body);text-decoration:none;background:var(--accent);color:var(--on-accent);border:2px solid var(--accent)}
@@ -63,7 +69,7 @@ h1{margin:0;font:var(--hw) calc(var(--h1) * var(--k))/1.02 var(--head);letter-sp
 .hl li::before{content:"";flex:none;width:14px;height:14px;background:var(--accent);border-radius:var(--r);box-shadow:0 0 0 2px var(--ink)}
 .visit-grid{display:grid;gap:32px}
 .label{margin:0 0 6px;font:700 .8125rem/1.4 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.addr{margin:0 0 28px;font-size:1.35rem;line-height:1.4;font-weight:600}
+.addr{margin:0 0 28px;font-size:1.35rem;line-height:1.4;font-weight:700}
 .hours-wrap{margin:0}
 table.hours{width:100%;border-collapse:collapse;font-size:1.0625rem}
 .hours th,.hours td{padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 18%,transparent);text-align:left;vertical-align:top}
@@ -103,19 +109,43 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
  .visit-grid.has-map{grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
  .map{height:420px}
 }
+
+@media(prefers-reduced-motion:no-preference){
+ @keyframes rise{from{transform:translateY(var(--rise))}}
+ @keyframes pz{to{transform:scale(var(--zoom)) translateY(5%)}}
+ @keyframes lift{from{transform:translateY(var(--lift)) scale(.96)}}
+ @keyframes slide{from{transform:translateX(calc(var(--lift) * -.6))}}
+ @keyframes bar{from{transform:scaleX(0)}}
+ @keyframes unzoom{from{transform:scale(1.25)}}
+ .hero-in>*{animation:rise var(--dur) cubic-bezier(.2,.7,.2,1)}
+ @supports (animation-timeline:view()){
+  .hero-photo img{animation:pz linear both;animation-timeline:scroll(root block);animation-range:0px var(--zr)}
+  .sec h2,.hl li{animation:slide linear both;animation-timeline:view();animation-range:entry 0% entry var(--rng)}
+  .sec h2::before{transform-origin:left;animation:bar linear both;animation-timeline:view();animation-range:entry 10% entry calc(var(--rng) + 10%)}
+  .hl li:nth-child(2){animation-range:entry 8% entry calc(var(--rng) + 8%)}
+  .hl li:nth-child(3){animation-range:entry 16% entry calc(var(--rng) + 16%)}
+  .hl li:nth-child(4){animation-range:entry 24% entry calc(var(--rng) + 24%)}
+  .hl li:nth-child(5){animation-range:entry 32% entry calc(var(--rng) + 32%)}
+  .strip figure{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry var(--rng)}
+  .strip figure:nth-child(2){animation-range:entry 10% entry calc(var(--rng) + 10%)}
+  .strip figure:nth-child(3){animation-range:entry 20% entry calc(var(--rng) + 20%)}
+  .strip img{animation:unzoom linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+  .visit-grid>*,.contact li{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry var(--rng)}
+ }
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <div class="draftbar" role="note">Draft preview made for Rocky Coast Gift by Fiddlehead Web. Unlisted and not on Google.</div>
-<header class="hero split"><div class="wrap hero-wrap"><div class="hero-in"><p class="eyebrow">Gift shop · Saint John, NB</p><h1>Rocky Coast Gift</h1><p class="where">177 Prince William Street, Saint John, NB E2L 2B4</p><div class="actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rocky+Coast+Gift+177+Prince+William+Street%2C+Saint+John%2C+NB+E2L+2B4">Get directions</a><a class="btn alt" href="mailto:rockycoastgifts@gmail.com">Email us</a></div></div><figure class="hero-photo"><img src="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(min-width:860px) 50vw, calc(100vw - 40px)" width="1200" height="900" alt="Colourful gifts and cards on shop shelves" fetchpriority="high" decoding="async"><figcaption class="tag">Sample photo. Yours goes here.</figcaption></figure></div></header>
+<header class="hero split"><div class="wrap hero-wrap"><div class="hero-in"><p class="eyebrow">Gift shop · Saint John, NB</p><h1>Rocky Coast Gift</h1><p class="tagline">Giftware, souvenirs, jewelry and candy on Prince William Street.</p><p class="where">177 Prince William Street, Saint John, NB E2L 2B4</p><div class="actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rocky+Coast+Gift+177+Prince+William+Street%2C+Saint+John%2C+NB+E2L+2B4" rel="noopener noreferrer">Get directions</a><a class="btn alt" href="mailto:rockycoastgifts@gmail.com">Email us</a></div></div><figure class="hero-photo"><img src="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=800&amp;q=70" srcset="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w, https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w" sizes="(min-width:860px) 50vw, calc(100vw - 40px)" width="1200" height="900" alt="Colourful gifts and cards on shop shelves" fetchpriority="high" decoding="async"><figcaption class="tag">Sample photo. Yours goes here.</figcaption></figure></div></header>
 <main>
-<section class="sec about" aria-labelledby="h-about"><div class="wrap"><h2 id="h-about">About</h2><p>Rocky Coast Gift is a gift shop on Prince William Street in Saint John. It sells giftware, souvenirs, jewelry and candy.</p></div><div class="wrap strip"><figure><img src="https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&fit=crop&w=700&q=70" srcset="https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&fit=crop&w=400&q=70 400w, https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&fit=crop&w=700&q=70 700w, https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Handmade soaps and sweets stacked in a gift shop" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&fit=crop&w=700&q=70" srcset="https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&fit=crop&w=400&q=70 400w, https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&fit=crop&w=700&q=70 700w, https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Potted plants, mugs and kitchenware on display" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&fit=crop&w=700&q=70" srcset="https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&fit=crop&w=400&q=70 400w, https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&fit=crop&w=700&q=70 700w, https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Shelves of decorative plates in a gift shop" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure></div></section>
+<section class="sec about" aria-labelledby="h-about"><div class="wrap"><h2 id="h-about">About</h2><p>Rocky Coast Gift is a gift shop on Prince William Street in Saint John. It sells giftware, souvenirs, jewelry and candy.</p></div><div class="wrap strip"><figure><img src="https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&amp;fit=crop&amp;w=700&amp;q=70" srcset="https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&amp;fit=crop&amp;w=400&amp;q=70 400w, https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w, https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?auto=format&amp;fit=crop&amp;w=1000&amp;q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Handmade soaps and sweets stacked in a gift shop" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&amp;fit=crop&amp;w=700&amp;q=70" srcset="https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&amp;fit=crop&amp;w=400&amp;q=70 400w, https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w, https://images.unsplash.com/photo-1560107379-95e9ca7803e0?auto=format&amp;fit=crop&amp;w=1000&amp;q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Potted plants, mugs and kitchenware on display" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&amp;fit=crop&amp;w=700&amp;q=70" srcset="https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&amp;fit=crop&amp;w=400&amp;q=70 400w, https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&amp;fit=crop&amp;w=700&amp;q=70 700w, https://images.unsplash.com/photo-1673168551810-5b35fc903675?auto=format&amp;fit=crop&amp;w=1000&amp;q=70 1000w" sizes="(min-width:760px) 33vw, 50vw" width="800" height="800" alt="Shelves of decorative plates in a gift shop" loading="lazy" decoding="async"><figcaption class="tag">Sample photo</figcaption></figure></div></section>
 <section class="sec alt" aria-labelledby="h-hl"><div class="wrap"><h2 id="h-hl">At a glance</h2><ul class="hl"><li>Giftware and souvenirs</li><li>Jewelry and candy</li><li>177 Prince William Street</li></ul></div></section>
 <section class="sec" aria-labelledby="h-visit"><div class="wrap"><h2 id="h-visit">Visit</h2><div class="visit-grid has-map"><div><p class="label">Find us</p><p class="addr">177 Prince William Street, Saint John, NB E2L 2B4</p><p class="label">Hours</p><div class="hours-wrap"><table class="hours"><caption>Opening hours</caption><tr><th scope="row">Mon</th><td>closed</td></tr><tr><th scope="row">Tue-Thu</th><td>10:00 AM-5:00 PM</td></tr><tr><th scope="row">Fri</th><td>8:00 AM-5:00 PM</td></tr><tr><th scope="row">Sat-Sun</th><td>10:00 AM-5:00 PM (in season)</td></tr></table></div></div><iframe class="map" title="Map of Rocky Coast Gift" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=177+Prince+William+Street%2C+Saint+John%2C+NB+E2L+2B4&amp;output=embed"></iframe></div></div></section>
-<section class="sec contact" aria-labelledby="h-contact"><div class="wrap"><h2 id="h-contact">Get in touch</h2><ul><li><a href="mailto:rockycoastgifts@gmail.com"><small>Email</small>rockycoastgifts@gmail.com</a></li><li><a href="https://www.facebook.com/rockycoastgifts/" rel="noopener nofollow"><small>Facebook</small>Find us on Facebook</a></li></ul></div></section>
+<section class="sec contact" aria-labelledby="h-contact"><div class="wrap"><h2 id="h-contact">Get in touch</h2><ul><li><a href="mailto:rockycoastgifts@gmail.com"><small>Email</small>rockycoastgifts@gmail.com</a></li><li><a href="https://www.facebook.com/rockycoastgifts/" rel="noopener noreferrer nofollow"><small>Facebook</small>Find us on Facebook</a></li></ul></div></section>
 </main>
 <footer><div class="wrap"><p>The photos on this draft are free stock samples from Unsplash, not photos of this business. Your own photos go here.</p><p>Draft made by Gurashish Singh, Fiddlehead Web, Fredericton NB. Facts from discoversaintjohn.com. Something wrong? Email <a href="mailto:gurashishsingh2301@gmail.com">gurashishsingh2301@gmail.com</a> and it is fixed or removed the same day.</p></div></footer>
-<nav class="bar" aria-label="Quick contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=Rocky+Coast+Gift+177+Prince+William+Street%2C+Saint+John%2C+NB+E2L+2B4">Directions</a><a href="mailto:rockycoastgifts@gmail.com">Email</a></nav>
+<nav class="bar" aria-label="Quick contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=Rocky+Coast+Gift+177+Prince+William+Street%2C+Saint+John%2C+NB+E2L+2B4" rel="noopener noreferrer">Directions</a><a href="mailto:rockycoastgifts@gmail.com">Email</a></nav>
 </body>
 </html>
